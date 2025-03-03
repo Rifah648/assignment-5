@@ -15,12 +15,15 @@
   font-family: "Poppins", sans-serif;
   
 }
+.body{
+    overflow: hidden;
+}
 </style>
 </head>
 <body class="poppins-font bg-blue-50 p-1">
     <header class="m-10">
         <nav>
-            <div class="navbar bg-white p-3 shadow-sm">
+            <div class="navbar bg-white p-3 shadow-sm flex font-bold md:flex-row items-center justify-between">
                 <img class="w-7" src="assets/logo.png" alt="">
                 <div class="flex-1">
                     
@@ -48,8 +51,8 @@
     <main class="m-10">
         <section class="bg-white rounded-xl  mt-5 flex  gap-5  ">
             <div class="w-[80%] h-full">
-                <div class="flex  gap-2 my-5 bg-white p-3 shadow-sm">
-                    <div class="bg-blue-50 w-[25%] rounded-xl p-7">
+                <div class="flex  gap-2 my-5 bg-white p-3 shadow-sm justify-between">
+                    <div class="bg-blue-50 w-[25%] rounded-xl p-7 ">
                         <div class="flex items-center justify-between gap-2">
                             <img class="bg-white p-2 rounded-full" src="assets/checkbox.png" alt="">
                             <div>
@@ -81,7 +84,7 @@
                     </div>
 
                 </div>
-                <div class="grid grid-cols-3 gap-6 bg-white shadow-sm p-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-white shadow-sm p-2">
                     <div class="bg-blue-50 p-3 rounded-lg flex card flex-col items-start gap-2 justify-center">
                         <p class="bg-white p-3 rounded-lg text-sm">SwiftPay</p>
                         <h2 class="text-xl  font-semibold">Fix Mobile Button Issue </h2>
@@ -227,7 +230,7 @@
 
 
             </div>
-            <div class="p-4 text-center shadow-xl w-[20%] h-full rounded-xl mt-7">
+            <div class=" hidden md:block p-4 text-center shadow-xl w-[20%] h-full rounded-xl mt-7">
                 <div  class="flex gap-1 items-center justify-center">
                     <img src="assets/activity.png" alt="">
                     <h2 class="text-xl">Activity Log</h2>
