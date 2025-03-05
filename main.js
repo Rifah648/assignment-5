@@ -11,6 +11,8 @@ function colorChange(event) {
         ',' + Math.round(Math.random() * 255) + ')';
 }
 
+
+
 let buttons = document.querySelectorAll(".Button");
 let numberElement = document.getElementById('number');
 let numberElement2 = document.getElementById('number2');

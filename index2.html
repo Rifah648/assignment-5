@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins-font {
+      font-family: "Poppins", sans-serif;
+      
+    }
+    .body{
+        overflow: hidden;
+    }
+    </style>
 </head>
-<body>
-    <h1>Rifah Emon</h1>
+<body class="bg-blue-50 p-1">
+    <header class="m-10">
+        <nav>
+            <div class="navbar bg-white p-3 shadow-sm flex font-bold md:flex-row items-center justify-between">
+                <img class="w-7" src="assets/logo.png" alt="">
+                <div class="flex-1">
+                    
+                  <h2 class="text-xl">Dev <span class="text-xl font-bold">Board</span></h2>
+                </div>
+                <div class="flex text-white bg-blue-700 text-sm w-30 h-10 justify-center items-center">
+                    <button id="desk-btn">Back To Desk</button>
+                </div>
+               
+              </div>
+
+        </nav>
+    </header>
+    <main class="m-10">
+        <h1 class="font-bold text-center text-3xl">Blog</h1>
+        <div class="mt-4 p-7 rounded bg-white shadow-xl">
+            <h1 class="font-bold text-2xl">Question-1: What is the different ways to select on element in the Dom?</h1>
+            <div class="border-1 border-dotted border-gray-500"></div>
+            <ul class="font-normal texl-xl text-gray-600">
+                <p>Answer: There are several ways to select elements in the DOM.
+                    <li>1. Select an element by Id: const element = document.getElementById("myElement")</li>
+
+                    <li>2. Selects elements by ClassName: const elements = document.getElementsByClassName("myClass")</li>
+                    <li>3. Selects elements by tagName: const elements = document.getElementsByTagName("div")</li>
+                    <li>4. Select the first element that matches  CSS selector : const element = document.querySelector(".myClass");</li>
+                    <li>5. Selects all elements that match CSS selector: const elements = document.querySelectorAll(".myClass");</li>
+                    <li>6. Select elements with specific attributes: const element = document.querySelector('[data-id="123]')</li>
+                </p>
+            </ul>
+
+        </div>
+        <div class="mt-4 p-7 rounded bg-white shadow-xl">
+            <h1 class="font-bold text-2xl">Question-2: What is the difference between innerHTML, innerText, and textContent?
+
+            </h1>
+            <div class="border-1 border-dotted border-gray-500"></div>
+            <ul class="font-normal texl-xl text-gray-600">
+                <p>Answer: innerHTML is:- index.innerHTML = "Hello", innerText is:- button.innerText ="Hello sir"; and textContent is :- index.textContent ="Hello sir";
+
+                </p>
+
+            </ul>
+
+        </div>
+        <div class="mt-4 p-7 rounded bg-white shadow-xl">
+            <h1 class="font-bold text-2xl">Question-3: What is event Delegation in the DOM?</h1>
+            <div class="border-1 border-dotted border-gray-500"></div>
+            <ul class="font-normal texl-xl text-gray-600">
+                <p>Answer: Event Delegation is a tecnique where a single event listener is added to a parent element instead of multiple child elements. This works because of event Bubbling, where events triggered on child elements propagate up to their ancestors.
+                    
+                </p>
+
+            </ul>
+
+        </div>
+        <div class="mt-4 p-7 rounded bg-white shadow-xl">
+            <h1 class="font-bold text-2xl">Question-4: What is event bubbling in the DOM?</h1>
+            <div class="border-1 border-dotted border-gray-500"></div>
+            <ul class="font-normal texl-xl text-gray-600">
+                <p>Answer: Event bubbling is a concept in the DOM where an event, such as a click or a keypress, is  triggered on an element and then propagates or "bubbles up" to its parent element in the DOM hierarchy. It works: When an event is triggered on a child element, it first runs the event handler on that child element. Then, the event moves up to its parent element, where the event handler is executed, and continues bubbling up through all the ancestor elements, one by one, until it resches the top-most ancestor.
+                    
+                </p>
+
+            </ul>
+
+        </div>
+        <div class="mt-4 p-7 rounded bg-white shadow-xl">
+            <h1 class="font-bold text-2xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <div class="border-1 border-dotted border-gray-500"></div>
+            <ul class="font-normal texl-xl text-gray-600">
+                <p>Answer: To create, add, and remove elements using JavaScript:
+                    <li>To create an element, use document.createElement()method:
+                        let newElement = document.createElement('div');
+                    </li>
+                    <li>To add the newly created element to the DOM, using appendChild() or append():
+                        document.body.appendChild(newElement);
+                    </li>
+                    <li>To remove an element, use removeChild() or remove().
+                        let elementToRemove = document.getElementById('elementId');
+                        elementToRemove.remove();
+                        let parent = document.getElementById('parent');
+                        let child = document.getElementById('child');
+                        parent.removeChild(child);
+                        
+                    </li>
+                    
+                </p>
+
+            </ul>
+
+        </div>
+
+    </main>
+    <script src="main2.js"></script>
 </body>
 </html>
